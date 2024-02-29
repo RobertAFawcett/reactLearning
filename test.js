@@ -3,7 +3,7 @@ class Toggle extends React.Component {
     super(props);
     this.state = {isToggleOn: true};
     this.time = new Date();
-    this.Age = 0
+    this.Age = 1
     // This binding is necessary to make `this` work in the callback    this.handleClick = this.handleClick.bind(this);  }
 
   handleClick() {    this.setState(prevState => ({      isToggleOn: !prevState.isToggleOn    }));  }
